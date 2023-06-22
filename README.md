@@ -16,7 +16,7 @@ ENTRYPOINT gunicorn --bind 0.0.0.0:80 transfer_sftp_backend:app --timeout 600
 You may also want to adjust the idle timeout value on the ALB using steps outlined here: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#connection-idle-timeout
 
 ### Step-By-Step Deployment Instructions
-1. Clone this reposititory  `git clone https://github.com/AkiraMD/web-client-for-aws-transfer-family.git`
+1. Clone this reposititory  `git clone https://github.com/AkiraMD/nonp-web-client-for-aws-transfer-family.git`
 2. `cd deployment`
 3. Allow user execute: `chmod u+x build-dist.sh` and `chmod u+x build-s3-dist.sh`
 4. Run `build-dist.sh`. For example, for nonp `./build-dist.sh thvc-nonp-sftp-web-client-lambda-code thvc-nonp-sftp-web-client v1.0.0`
