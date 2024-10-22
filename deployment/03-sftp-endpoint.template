@@ -364,7 +364,6 @@ Resources:
               Resource:
                 Fn::GetAtt: TransferSFTPS3Access.Arn
 
-
   SFTPCustomAuthLambda:
     Type: AWS::Lambda::Function
     Metadata:
